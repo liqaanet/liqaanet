@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Report</title>
+</head>
+<body>
+    <h1>Submit a Maintenance Report</h1>
+    <form method="POST" action="/submit" enctype="multipart/form-data">
+        <label for="case_id">Case ID:</label>
+        <input type="text" name="case_id" id="case_id" required><br><br>
+
+        <label for="field">Field:</label>
+        <input type="text" name="field" id="field" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea name="description" id="description" rows="4" required></textarea><br><br>
+
+        <label for="images">Attach Images:</label>
+        <input type="file" name="images" id="images" multiple><br><br>
+
+        <button type="submit">Submit Report</button>
+    </form>
+</body>
+</html>
